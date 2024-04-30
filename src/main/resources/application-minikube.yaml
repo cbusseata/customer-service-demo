@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    # https://minikube.sigs.k8s.io/docs/handbook/host-access/
+    url: jdbc:oracle:thin:@host.minikube.internal:1521:ORCLCDB
+
+  kafka:
+    bootstrap-servers: kafka-service:29092
+
+  redis:
+    ttl: 5
+    hostname: redis

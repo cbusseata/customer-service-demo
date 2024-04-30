@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis
+spec:
+  ports:
+    - port: 6379
+      name: client-connections
+      targetPort: 6379
+    - port: 8001
+      name: web
+      targetPort: 8001
+  selector:
+    app: redis

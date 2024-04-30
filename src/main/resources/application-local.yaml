@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:ORCLCDB
+
+  kafka:
+    bootstrap-servers: localhost:29092
+
+  redis:
+    ttl: 5
+    hostname: localhost
